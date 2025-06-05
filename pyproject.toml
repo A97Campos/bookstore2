@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "bookstore"
+version = "0.1.0"
+description = "Bookstore API"
+authors = ["Andrew Campos <andrewleandro97@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+Django = "^3.2.8"
+djangorestframework = "^3.12.4"  # corrigi nome do pacote correto
+psycopg2-binary = "^2.9.2"
+gunicorn = "^20.1.0"
+whitenoise = "^5.3.0"
+gitpython = "^3.1.37"
+
+[tool.poetry.group.dev.dependencies]
+django-extensions = "^3.1.3"
+django-debug-toolbar = "^3.2.2"
+autopep8 = "^1.6.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest = "^6.2.5"
+factory-boy = "^3.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
